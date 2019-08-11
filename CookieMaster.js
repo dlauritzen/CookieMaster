@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  Automation: {\n    ClickGoldenCookies: {\n      enabled: false,\n      noWrath: false\n    }\n  },\n  Display: {\n    SortBuildingsByPaybackPeriod: false\n  },\n  Version: {\n    major: '2.019',\n    minor: '1'\n  }\n});\n\n//# sourceURL=webpack:///./src/Settings.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  AddOn: {\n    Name: \"CookieMaster\",\n    GameVersion: \"2.019\",\n    Version: \"2.019.1\"\n  },\n  Automation: {\n    ClickGoldenCookies: {\n      enabled: false,\n      noWrath: false\n    }\n  },\n  Display: {\n    SortBuildingsByPaybackPeriod: false\n  }\n});\n\n//# sourceURL=webpack:///./src/Settings.js?");
 
 /***/ }),
 
@@ -117,7 +117,7 @@ eval("exports.Game = window.Game;\n\n//# sourceURL=webpack:///./src/Window.js?")
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Settings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Settings */ \"./src/Settings.js\");\n/* harmony import */ var _Window__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Window */ \"./src/Window.js\");\n/* harmony import */ var _Window__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Window__WEBPACK_IMPORTED_MODULE_1__);\n\n\n_Window__WEBPACK_IMPORTED_MODULE_1__[\"Game\"].Win();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Settings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Settings */ \"./src/Settings.js\");\n/* harmony import */ var _Window__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Window */ \"./src/Window.js\");\n/* harmony import */ var _Window__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Window__WEBPACK_IMPORTED_MODULE_1__);\n\n // Announce we've loaded.\n\nif (_Window__WEBPACK_IMPORTED_MODULE_1__[\"Game\"].prefs.popups) {\n  _Window__WEBPACK_IMPORTED_MODULE_1__[\"Game\"].Popup(_Settings__WEBPACK_IMPORTED_MODULE_0__[\"default\"].AddOn.Name + \" version \" + _Settings__WEBPACK_IMPORTED_MODULE_0__[\"default\"].AddOn.Version + \" loaded!\");\n} else {\n  _Window__WEBPACK_IMPORTED_MODULE_1__[\"Game\"].Notify(_Settings__WEBPACK_IMPORTED_MODULE_0__[\"default\"].AddOn.Name + \" version \" + _Settings__WEBPACK_IMPORTED_MODULE_0__[\"default\"].AddOn.Version + \" loaded!\", \"\", \"\", 1, 1);\n} // Grant the shadow achievement for using an add-on.\n\n\n_Window__WEBPACK_IMPORTED_MODULE_1__[\"Game\"].Win(\"Third-party\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
