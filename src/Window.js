@@ -1,0 +1,2 @@
+
+exports.Game = window.Game;
